@@ -1,0 +1,11 @@
+<h1>I am in the app component</h1>
+<hr>
+<app-student-list></app-student-list>
+<hr>
+
+<br>
+<app-student-data></app-student-data>
+<hr>
+<button (click)="toggleWarning()">Toggle Warning Alert</button>
+<app-warning-alert *ngIf="showWarning"></app-warning-alert>
+<app-servers></app-servers>

@@ -1,0 +1,19 @@
+<div class="page-container">
+    <app-sidebar></app-sidebar>
+    <div class="content-container">
+      <div class="header">
+        <app-header [headerData]="newCashKickHeaderData"></app-header>
+        <button mat-button class="back-button">
+          <mat-icon>
+            <img src="assets/img/back_arrow.svg" alt="back-arrow">
+          </mat-icon>
+          Back
+        </button>
+      </div>
+      <div class="body">
+        <app-contract-table class="contract-table" (selectionChange)="onContractsSelected($event)"></app-contract-table>
+        <app-summary-box class="summary-box" [selectedContracts]="selectedContracts"></app-summary-box>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,46 @@
+.page-container {
+    display: flex;
+    height: 100vh;
+    background-color: #19181C; 
+  }
+  
+  .app-sidebar {
+    width: 18.3vw;
+  }
+  
+  .content-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header {
+    padding-top: 4rem;
+    margin: 20px;
+  }
+  .mat-mdc-button:not(:disabled) {
+    color: #E8E8E9;
+    background-color: #2D2D30;
+
+}
+  .back-button {
+    margin-left: 2px;
+    margin-top: 16px;
+  }
+  
+  .body {
+    flex: 1;
+    margin-left: 30px;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .contract-table {
+    flex: 2;
+  }
+  .summary-box {
+    flex: 1;
+  }
+  

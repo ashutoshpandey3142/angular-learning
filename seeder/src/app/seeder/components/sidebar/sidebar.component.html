@@ -1,0 +1,14 @@
+<div class="sidebar-container">
+  <app-sidebar-header [header]="header"></app-sidebar-header>
+
+  <mat-nav-list class="menu-item-container">
+    <ng-container *ngFor="let item of menuItems; let i = index">
+      <div class="list-item" (click)="setActive(i)" [ngClass]="{'active': i === activeIndex}">
+        <app-menu-item [menuItem]="item" [isActive]="i === activeIndex"></app-menu-item>
+      </div>
+    </ng-container>
+  </mat-nav-list>
+
+  <app-sidebar-footer [footer]="footer">
+  </app-sidebar-footer>
+</div>

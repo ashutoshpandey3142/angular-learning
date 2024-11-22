@@ -1,0 +1,13 @@
+.warning-alert {
+    padding: 10px;
+    background-color: #f8d7da; /* Light red background */
+    border: 1px solid #f5c6cb; /* Darker red border */
+    color: #721c24; /* Dark red text */
+    border-radius: 5px;
+    margin: 10px 0;
+  }
+  
+  .warning-alert p {
+    margin: 0;
+  }
+  

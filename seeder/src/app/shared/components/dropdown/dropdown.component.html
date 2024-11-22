@@ -1,0 +1,17 @@
+<div class="dropdown-wrapper">
+  <button mat-icon-button [matMenuTriggerFor]="dropdownMenu" aria-label="Dropdown menu">
+    <mat-icon>arrow_drop_down</mat-icon>
+  </button>
+  <mat-menu #dropdownMenu="matMenu" class="dropdown-container">
+    <ng-container *ngFor="let item of menuItems">
+      <button mat-menu-item [ngClass]="{'active': item.type === 'logout'}">
+        <img *ngIf="item.imageSrc" [src]="item.imageSrc" alt="{{item.text}}">
+        <div *ngIf="item.type === 'profile'">
+          <p class="name">{{item.name}}</p>
+          <p>{{item.text}}</p>
+        </div>
+        <p *ngIf="item.type !== 'profile'">{{item.text}}</p>
+      </button>
+    </ng-container>
+  </mat-menu>
+</div>

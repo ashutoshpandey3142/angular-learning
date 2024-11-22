@@ -1,0 +1,78 @@
+{
+  "contracts": [
+    {
+      "id": 1,
+      "name": "Contract 1",
+      "type": "Monthly",
+      "status": "Available",
+      "perPayment": "$12000.25",
+      "termLength": "12 months \n 2.0% fee",
+      "totalFinanced": "-",
+      "paymentAmount": "$126722.64"
+    },
+    {
+      "id": 2,
+      "name": "Contract 6",
+      "type": "Monthly",
+      "status": "Available",
+      "perPayment": "$6000.00",
+      "termLength": "12 months \n 2.0% fee",
+      "totalFinanced": "-",
+      "paymentAmount": "$63360.00"
+    },
+    {
+      "id": 3,
+      "name": "Contract 5",
+      "type": "Monthly",
+      "status": "Available",
+      "perPayment": "$6000.00",
+      "termLength": "12 months \n 2.0% fee",
+      "totalFinanced": "-",
+      "paymentAmount": "$63360.00"
+    },
+    {
+      "id": 4,
+      "name": "Contract 4",
+      "type": "Monthly",
+      "status": "Available",
+      "perPayment": "$6000.00",
+      "termLength": "12 months \n 2.0% fee",
+      "totalFinanced": "-",
+      "paymentAmount": "$63360.00"
+    },
+    {
+      "id": 5,
+      "name": "Contract 3",
+      "type": "Monthly",
+      "status": "Available",
+      "perPayment": "$6000.00",
+      "termLength": "12 months \n 2.0% fee",
+      "totalFinanced": "-",
+      "paymentAmount": "$63360.00"
+    },
+    {
+      "id": 6,
+      "name": "Contract 2",
+      "type": "Monthly",
+      "status": "Available",
+      "perPayment": "$6000.00",
+      "termLength": "12 months \n 2.0% fee",
+      "totalFinanced": "-",
+      "paymentAmount": "$21120.00"
+    }
+  ],
+  "cashkicks": [
+    {
+      "id": 1,
+      "name": "My first advance",
+      "status": "Pending",
+      "maturity": "Apr 03, 2022",
+      "totalRecieved": "$150,000.00 \n 12% fee",
+      "totalFinanced": "$170,454.55"
+    }
+  ]
+  ,
+  "user": {
+    "totalAmount": "$880000.00"
+  }
+} 

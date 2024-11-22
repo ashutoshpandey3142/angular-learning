@@ -1,0 +1,51 @@
+.mat-slider.mat-slider-horizontal .mat-slider-track-fill {
+  background-color: #3A3A3D;
+  width: 100%;
+  color: #6C5DD3;
+  border-color: #3A3A3D;
+}
+
+.mat-mdc-slider {
+  width: 100%;
+}
+.mat-mdc-slider .mdc-slider__thumb-knob {
+  height: 12px;
+  border-radius: 10px;
+  background-color: #6C5DD3;
+  border-color: #6C5DD3 !important;
+  border:5px solid  #6C5DD3 !important;
+}
+
+.mat-accent .mat-slider-thumb {
+  height: 33px;
+  width: 33px;
+  background-color: #6C5DD3;
+  border: solid 2px gray;
+}
+
+/* ::ng-deep .mat-slider-thumb {
+  height: 12px;
+  border-radius: 10px;
+  background-color: #6C5DD3;
+  border-color: #6C5DD3 !important;
+  border:5px solid  #6C5DD3 !important;
+
+}
+
+::ng-deep .mat-slider-thumb.mat-slider-thumb-label-showing {
+  height: 12px;
+  border-radius: 10px;
+  background-color: #6C5DD3;
+  border-color: #6C5DD3 !important;
+  border:5px solid  #6C5DD3 !important;
+}
+
+::ng-deep .mat-slider-thumb:focus {
+  height: 12px;
+  border-radius: 10px;
+  background-color: #6C5DD3;
+  border-color: #6C5DD3 !important;
+  border:5px solid  #6C5DD3 !important;
+}
+
+/* Customize the hover state of the thumb */

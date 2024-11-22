@@ -1,0 +1,10 @@
+<div class="user-detail">
+    <div class="user-info">
+      <h2>{{ user.name }}</h2>
+      <p>Email: {{ user.email }}</p>
+      <p>Password: *********</p>
+      <p>Address: {{ user.address.city }}, {{ user.address.state }}, {{ user.address.postalCode }}</p>
+    </div>
+    <button class="edit-button" (click)="navigateToEdit()">Edit</button>
+  </div>
+  

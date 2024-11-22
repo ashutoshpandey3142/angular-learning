@@ -1,0 +1,24 @@
+p {
+    color: blue;
+  }
+  
+  button {
+    background-color: #007bff; /* Primary blue color */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding for size */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  button:disabled {
+    background-color: #cccccc; /* Gray background for disabled state */
+    color: #666666; /* Dark gray text */
+    cursor: not-allowed; /* Not allowed cursor */
+  }
+  

@@ -1,0 +1,8 @@
+<div class="main-wrapper">
+    <div class="header">
+        <h2 class="heading">Your Contracts</h2>
+        <img class="icon" src="assets/img/info_icon.svg" alt="info" />
+    </div>
+    <app-table [columns]="contractColumns" [data]="contractsDataSource" [showCheckbox]="true" (selectionChange)="onSelectionChange($event)"></app-table>
+  </div>
+  

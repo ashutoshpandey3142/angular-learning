@@ -1,0 +1,39 @@
+<div class="edit-user">
+    <h2>Edit User</h2>
+    <form [formGroup]="userForm" (ngSubmit)="updateUser()">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input formControlName="name" type="text" id="name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input formControlName="email" type="email" id="email">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input formControlName="password" type="password" id="password">
+      </div>
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input formControlName="confirmPassword" type="password" id="confirmPassword">
+      </div>
+      <div class="form-group">
+        <label for="city">City</label>
+        <input formControlName="address.city" type="text" id="city">
+      </div>
+      <div class="form-group">
+        <label for="state">State</label>
+        <input formControlName="address.state" type="text" id="state">
+      </div>
+      <div class="form-group">
+        <label for="postalCode">Postal Code</label>
+        <input formControlName="address.postalCode" type="text" id="postalCode">
+      </div>
+      <div class="form-group">
+        <label for="promotionalOffers">Promotional Offers</label>
+        <input formControlName="promotionalOffers" type="checkbox" id="promotionalOffers">
+      </div>
+      <button type="submit">Save</button>
+    </form>
+  </div>
+  

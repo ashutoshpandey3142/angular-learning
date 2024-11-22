@@ -1,0 +1,40 @@
+.header-main-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #19181C;
+  }
+  
+  .header-title-container {
+    display: flex;
+    gap: 2px;
+    flex-direction: column;
+  }
+  
+  .header-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42px;
+    color: #E8E7F0;
+  }
+  
+  .header-subtitle {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #A5A5A6;
+    margin-top: 0;
+  }
+  
+  .avatar-container {
+    display: flex;
+    width: 56px;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  mat-icon {
+    font-size: 56px;
+    color: #A5A5A6;
+  }
+  

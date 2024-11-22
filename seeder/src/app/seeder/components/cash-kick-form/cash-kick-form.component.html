@@ -1,0 +1,25 @@
+<mat-card class="card">
+    <div class="header">
+      <div class="header-text">
+        <h1>Name your cash kick</h1>
+        <h3>Add a name to identify your cash kick</h3>
+      </div>
+      <button mat-icon-button class="close-button" (click)="onClose()">
+        <mat-icon>close</mat-icon>
+      </button>
+    </div>
+  
+    <form class="form" [formGroup]="cashKickForm">
+        <label class="mat-label">Cash kick name</label>
+        <div class="input-wrapper">
+        <input formControlName="name" placeholder="Ex: marketing expenses" class="custom-input">
+        <div class="error-message" *ngIf="cashKickForm.get('name')?.hasError('required') && cashKickForm.get('name')?.touched">Name is required</div>
+        </div>
+  
+      <div class="footer">
+        <button mat-button class="cancel-button" type="button" (click)="onCancel()">Cancel</button>
+        <button mat-raised-button class="cash-kick-btn" type="submit" (click)="onSubmit()">Create Cash Kick</button>
+      </div>
+    </form>
+  </mat-card>
+  

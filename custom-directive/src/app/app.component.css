@@ -1,0 +1,14 @@
+.card-success {
+    width: 40vw;
+}
+
+.clicked {
+    font-weight: bold;
+    color: red;
+  }
+  
+  .active {
+    border: 2px solid red;
+    font-weight: bold;
+  }
+  

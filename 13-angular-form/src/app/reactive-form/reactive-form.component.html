@@ -1,0 +1,68 @@
+<mat-card class="card">
+    <h2>Registration Form</h2>
+    <form class="form" [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+      <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input formControlName="name" type="text" matInput>
+        <mat-error *ngIf="registrationForm.get('name')?.hasError('required')">Name is required</mat-error>
+        <mat-error *ngIf="registrationForm.get('name')?.hasError('minlength')">Name must be at least 3 characters long</mat-error>
+        <mat-error *ngIf="registrationForm.get('name')?.hasError('forbiddenName')">{{registrationForm.get('name')?.value}} Name not allowed</mat-error>
+
+      </mat-form-field>
+  
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input type="email" formControlName="email" matInput>
+        <mat-error *ngIf="registrationForm.get('email')?.hasError('required')">Email is required</mat-error>
+        <mat-error *ngIf="registrationForm.get('email')?.hasError('email')">Invalid email format</mat-error>
+      </mat-form-field>
+  
+      <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input type="password" formControlName="password" matInput>
+        <mat-error *ngIf="registrationForm.get('password')?.hasError('required')">Password is required</mat-error>
+        <mat-error *ngIf="registrationForm.get('password')?.hasError('minlength')">Password must be at least 6 characters long</mat-error>
+      </mat-form-field>
+  
+      <mat-form-field>
+        {{registrationForm.get('confirmPassword')?.errors?.['misMatch']
+         | json}}
+        <mat-label>Confirm Password</mat-label>
+        <input type="password" formControlName="confirmPassword" matInput>
+        <mat-error *ngIf="registrationForm.get('confirmPassword')?.hasError('required')">Confirm Password is required</mat-error>
+        <mat-error *ngIf="registrationForm.get('confirmPassword')?.errors?.['misMatch']">Password and Confirm Password must be the same</mat-error>
+      </mat-form-field>
+  
+      <mat-card formGroupName="address" class="address-form">
+        <legend>Address</legend>
+        <mat-form-field>
+          <mat-label>City</mat-label>
+          <input formControlName="city" type="text" matInput>
+          <mat-error *ngIf="registrationForm.get('address.city')?.hasError('required')">City is required</mat-error>
+        </mat-form-field>
+  
+        <mat-form-field>
+          <mat-label>State</mat-label>
+          <input formControlName="state" type="text" matInput>
+          <mat-error *ngIf="registrationForm.get('address.state')?.hasError('required')">State is required</mat-error>
+        </mat-form-field>
+  
+        <mat-form-field>
+          <mat-label>Postal Code</mat-label>
+          <input formControlName="postalCode" type="text" matInput>
+          <mat-error *ngIf="registrationForm.get('address.postalCode')?.hasError('required')">Postal Code is required</mat-error>
+          <mat-error *ngIf="registrationForm.get('address.postalCode')?.hasError('pattern')">Postal Code must be a 5 digit number</mat-error>
+        </mat-form-field>
+      </mat-card>
+  
+      <mat-checkbox formControlName="promotionalOffers">Send me promotional offers</mat-checkbox>
+  
+      <div>
+        <button mat-raised-button type="submit" color="primary">Submit</button>
+        <button mat-button color="secondary" type="button" (click)="loadAPIData()">Load API Data</button>
+      </div>
+    </form>
+  
+    {{registrationForm.value | json}}
+  </mat-card>
+  

@@ -1,0 +1,47 @@
+<h1>Parent Component</h1>
+
+
+<div *ngFor="let user of userDetails; let i = index">
+  <app-user-details 
+  [item]="user" 
+  (userChanged)="onUserDetailsChange(i, $event)">
+</app-user-details>
+</div>
+
+
+
+
+<hr>
+<app-child [item]="data"
+(updateDataEvent)="updateData($event)"
+></app-child>
+<br>
+<button (click)="updateChild()">Update Child Component</button>
+
+
+<p>
+  Updated value {{val}}
+</p>
+
+
+
+
+
+<div class="app">
+  <h1>{{ title }}</h1>
+  
+  <div class="new-todo">
+    <input [(ngModel)]="newTodo" placeholder="Add a new todo">
+    <button (click)="addTodo()">Add Todo</button>
+  </div>
+  
+  <div class="todo-list">
+    <app-todo-item 
+      *ngFor="let todo of todos; let i = index"
+      [todo]="todo"
+      [index]="i"
+      (toggleComplete)="toggleTodoComplete($event)"
+      (deleteTodo)="deleteTodoItem($event)">
+    </app-todo-item>
+  </div>
+</div>

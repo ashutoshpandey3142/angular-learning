@@ -1,0 +1,42 @@
+.menu-item-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  width: 15.4vw;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.mat-mdc-card {
+  background-color: #201F24;
+  box-shadow: none;
+}
+
+.mdc-list-item {
+  padding: 0;
+}
+.active-state {
+  color: #E8E8E8;
+  background-color: #2D2D30;
+}
+
+.inactive-state {
+  color: #A5A5A6;
+}
+
+.menu-item-image {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+}
+
+.menu-item-text {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 1%;
+  margin: 0;
+}

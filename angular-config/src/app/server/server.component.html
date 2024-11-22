@@ -1,0 +1,13 @@
+<h3>I am in the Server component</h3>
+
+<!-- Using ngFor to loop through servers -->
+<div *ngFor="let server of servers; let i = index" [ngClass]="{ 'online': server.status === 'online', 'offline': server.status === 'offline' }">
+    <!-- String interpolation -->
+  <p>Server with ID {{ server.id }} is {{ server.status }}</p>
+  <p>The status of the server is: {{ getServerStatus() }}</p>
+  <p>Details: {{ getServerDetails() }}</p>
+  <p>Server Name in Uppercase: {{ server.name.toUpperCase() }}</p>
+  <p>Random Number: {{ getRandomNumber() }}</p>
+  <p>{{i}}</p>
+
+</div>

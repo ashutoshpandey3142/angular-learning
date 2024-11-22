@@ -1,0 +1,4 @@
+<mat-card [ngClass]="isActive ? 'active-state' : 'inactive-state'" class="menu-item-card">
+  <img mat-card-avatar src="{{isActive? menuItem.activeImageSrc : menuItem.inActiveImageSrc}}" alt="{{menuItem.alt}}" class="menu-item-image">
+    <p class="menu-item-text">{{menuItem.text}}</p>
+</mat-card>

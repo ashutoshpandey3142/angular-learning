@@ -1,0 +1,33 @@
+.generic-table {
+    width: 100%;
+  }
+  
+  .header-cell {
+    background-color: #262529 !important;
+    padding: 12px 20px;
+    color: #A5A5A6;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17.15px;
+    gap: 8px;
+    border-radius: 0 !important;
+  }
+
+  .mat-cell {
+    background-color: #201F24;
+    padding: 12px 20px;
+    color: #A5A5A6;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17.15px;
+    gap: 8px; 
+  }
+  .mat-mdc-header-cell {
+    border: none;
+  }
+  .mat-mdc-cell {
+    border: none;
+  }
+  

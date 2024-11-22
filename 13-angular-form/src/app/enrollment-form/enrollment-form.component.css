@@ -1,0 +1,29 @@
+mat-card {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+  }
+  
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  fieldset {
+    margin: 1rem 0;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 4px;
+  }
+  
+  legend {
+    padding: 0 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  button {
+    display: block;
+    margin: 2rem auto 0;
+  }
+  

@@ -1,0 +1,46 @@
+<mat-card class="summary-box-container">
+    <div class="summary-header">
+      <h2 style="margin: 0;">Summary</h2>
+      <img src="assets/img/info_icon.svg" alt="info" />
+    </div>
+    <div class="summary-content">
+      <div class="summary-item">
+        <span class="summary-label">Term</span>
+        <span class="summary-value">{{ termLength }}</span>
+      </div>
+      <div class="summary-item">
+        <span class="summary-label">Selected Contracts</span>
+        <span class="summary-value">{{ selectedContracts.length }}</span>
+      </div>
+    </div>
+    <div class="summary-slider">
+      <div class="summary-slider-header">
+        <span class="summary-label">Slide to auto select</span>
+        <button mat-button disabled="false" (click)="reset()">Reset</button>
+      </div>
+      <app-slider [sliderValue]="selectedContracts.length + 1"  [max]="5"></app-slider>
+      <div class="contracts-amount">
+        <span style="color: #B4A9FF;">${{selectedContracts.length}} selected of</span> <span style="color: #A5A5A6;">$880,000.00 </span>
+      </div>
+    </div>
+
+    <div class="summary-content">
+      <div class="summary-item">
+        <span class="summary-label">Pay back amount</span>
+        <span class="summary-value">{{ paybackAmount }}</span>
+      </div>
+      <div class="summary-item">
+        <span class="summary-label">Rate%</span>
+        <span class="summary-value">{{ rate }}</span>
+      </div>
+    </div>
+    <hr>
+    <div>
+      <div class="summary-item">
+        <span class="summary-label">Total Payable</span>
+        <span class="summary-value">{{ totalPayable }}</span>
+      </div>
+    </div>
+    <button mat-button (click)="reviewYourCredit()">Review your credit</button>
+  </mat-card>
+  

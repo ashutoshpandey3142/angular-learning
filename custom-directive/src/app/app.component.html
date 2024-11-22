@@ -1,0 +1,22 @@
+<h1 appChangeMe>Welcome to Angular</h1>
+<h1>Hell Everyone</h1>
+<h2 appChangeMe myColor="red"> Display blue color</h2>
+<h3 myColor="green">If you not add Decorator selector it will not work</h3>
+<h4 appChangeMe appendText="Hey! ">Today is so hot</h4>
+
+<hr>
+<div appRendererHighlight>
+  Hover, click, or double-click me!
+</div>
+
+<hr>
+<div appHostBinding>
+  Host binding directive -> Hover, click, or double-click me to see changes!
+</div>
+
+<hr>
+<div>
+  <button (click)="toggleVisibility()">Toggle Visibility</button>
+  <p *appUnless="isVisible">This paragraph is visible when isVisible is false.</p>
+  <p *ngIf="isVisible">This paragraph is visible when isVisible is true.</p>
+</div>

@@ -1,0 +1,82 @@
+{
+  "registrations": [
+    {
+      "name": "ash",
+      "email": "Ashu@gmail.com",
+      "password": "1234567",
+      "confirmPassword": "1234567",
+      "address": {
+        "city": "city",
+        "state": "state",
+        "postalCode": "12345"
+      },
+      "promotionalOffers": true,
+      "id": "eb2b"
+    },
+    {
+      "id": "0255",
+      "name": "ashu",
+      "email": "ashu@gmail.com",
+      "password": "1234567890",
+      "confirmPassword": "1234567890",
+      "address": {
+        "city": "city",
+        "state": "stat",
+        "postalCode": "12345"
+      },
+      "promotionalOffers": false
+    },
+    {
+      "id": "0fcc",
+      "name": "abcd",
+      "email": "abcd@gmail.com",
+      "password": "1234567",
+      "confirmPassword": "1234567",
+      "address": {
+        "city": "cuty",
+        "state": "state",
+        "postalCode": "12345"
+      },
+      "promotionalOffers": false
+    },
+    {
+      "id": "b8f2",
+      "name": "abc",
+      "email": "abc@gmail.com",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "address": {
+        "city": "city",
+        "state": "prayrag",
+        "postalCode": "12345"
+      },
+      "promotionalOffers": false
+    },
+    {
+      "name": "Zai",
+      "email": "zainul@gmail.com",
+      "password": "1234567",
+      "confirmPassword": "12345678",
+      "address": {
+        "city": "City",
+        "state": "UP",
+        "postalCode": "12345"
+      },
+      "promotionalOffers": false,
+      "id": "6b87"
+    },
+    {
+      "id": "d85b",
+      "name": "Akash",
+      "email": "akash@gmail.com",
+      "password": "Akash@123",
+      "confirmPassword": "Akash@123",
+      "address": {
+        "city": "Allahabad",
+        "state": "UP",
+        "postalCode": "12345"
+      },
+      "promotionalOffers": true
+    }
+  ]
+}

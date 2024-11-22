@@ -1,0 +1,66 @@
+.summary-box-container {
+    background-color: #201F24;
+    border: 1px solid #28272B;
+    border-radius: 12px;
+    padding: 32px;
+    gap: 20px;
+}
+
+.summary-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    color: #E8E7F0;
+}
+
+.summary-header img {
+    margin: 0;
+}
+
+.summary-content {
+    gap: 12px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.summary-label {
+    color: #A5A5A6;
+}
+
+.summary-value {
+    color: #E8E7F0;
+}
+
+.summary-slider {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.summary-slider-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mat-mdc-button {
+    margin: 0;
+    color: #E8E8E9;
+    background-color: #2D2D30;
+
+}
+
+.mat-mdc-button[disabled], .mat-mdc-button.mat-mdc-button-disabled {
+    background-color: #2D2D30;
+    color: #413F4D;
+}
+.contracts-amount {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
